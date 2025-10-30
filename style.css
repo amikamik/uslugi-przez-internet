@@ -1,0 +1,49 @@
+/* Plik: style.css */
+
+/* Płynne przewijanie */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ustawienie dla stałej nawigacji */
+body {
+    padding-top: 56px;
+}
+
+/* Stylizacja sekcji HERO (z hakiem marketingowym) */
+.hero-section {
+    padding: 8rem 0;
+    background-color: #343a40; /* Ciemne tło */
+    background: linear-gradient(to bottom, rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.9)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop'); /* Lekarz/technologia w tle */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+/* Zapewnienie, że formularz jest czytelny */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Drobne poprawki wizualne dla kart */
+.card-title {
+    color: #0d6efd; /* Kolor główny Bootstrap */
+}
+
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* === NOWA, WYRÓŻNIONA SEKCJA === */
+.bg-primary-gradient {
+    /* Używamy koloru zbliżonego do Bootstrap 'primary', ale ciemniejszego */
+    background: #0d6efd; /* Fallback */
+    background: linear-gradient(135deg, #0b5ed7 0%, #0d6efd 100%);
+}
